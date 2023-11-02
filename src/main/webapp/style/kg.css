@@ -1,0 +1,16 @@
+body {
+  height: 2000px; /* 페이지가 충분히 길어야 스크롤이 가능함 */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 500px; /* 테스트를 위한 여백 */
+}
+
+.box.show {
+  opacity: 1;
+}

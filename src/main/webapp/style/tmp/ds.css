@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 80%; /* Adjust as needed */
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    justify-content: center;
+  }
+  
+  .slide {
+    min-width: 80%; /* Adjust based on how much you want to be visible */
+    box-sizing: border-box;
+    padding: 0 10px; /* Adjust spacing between slides */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* For smoother slide transition */
+  .carousel {
+    will-change: transform;
+  }
+  
